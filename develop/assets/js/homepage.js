@@ -12,7 +12,9 @@ var getUserRepos = function(user) {
         }
     })
     //.CATCH IS BEING ATTACHED TO THE END OF THE .THEN!!!
-    .catch(function(error)) {alert("Unable to connect to GitHub");
+    .catch(function(error) {alert("Unable to connect to GitHub");
+    });
+
 };
 console.log("outside");
 
@@ -87,4 +89,3 @@ var displayRepos = function(repos, searchTerm) {
 }
 
 getUserRepos();
-
